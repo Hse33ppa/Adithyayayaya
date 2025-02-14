@@ -1,0 +1,57 @@
+        <style>
+        body {
+            background-image: url('https://media.gettyimages.com/id/1463059189/video/heart-icons-moving-animation-flat-style-like-and-love-symbol-the-concept-of-valentines-day.jpg?s=640x640&k=20&c=OrJaINtwrtnTPruOJuUcuRVG5zrtJsnrLy219mEQE4U=');
+            background-size: cover;
+            background-position: center;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
+        
+        body {
+            font-family: 'Felipa', cursive;
+            text-align: center;
+            padding: 50px;
+            font-size: 24px;
+        }
+        #letter {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border: 2px solid black;
+            white-space: pre-wrap;
+            text-align: left;
+        }
+        #letter p {
+            margin-bottom: 2px;
+        }
+        #countdown {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unlock the Secret Letter</h1>
+    <p>The letter will be available on February 14th at exactly 9:37 PM, unless unlocked with the special passcode.</p>
+    <div id="countdown"></div>
+    <input type="text" id="passcode" placeholder="Enter passcode">
+    <button id="unlockButton">Unlock Letter</button>
+    <div id="letter">
+        <h2>My Dearest Fresha,</h2>
+        <p>From the very first moment I met you, I knew there was something extraordinary about you. And every day since, you’ve only proven me right. You are the kind of rare beauty that poets write about, the kind of soul that turns ordinary moments into unforgettable ones.</p>
+        <p>Yesterday was one of those moments. I arrived at the library just as you were leaving, and in that brief span of time, everything else became irrelevant. It was just you—your radiant smile, the way your eyes lit up when you saw me, the softness of your touch as we came together in that magnificent parting kiss. I can still feel the warmth of your lips, the way the world seemed to hold its breath around us, as if even time itself didn’t dare to interrupt.</p>
+        <p>I could spend forever lost in your presence, drawn in by the way you speak, the way you think, the way you love with such effortless grace. There’s something mesmerizing about you, something that goes beyond beauty—it's in the way your laughter fills the spaces around us, the way your presence turns the dullest days into something bright and full of life. You are a force of nature, a masterpiece, and the most precious gift my heart has ever known.</p>
+        <p>On this Valentine’s Day, I want you to know how deeply, endlessly, and irrevocably I love you. You are my favorite thought, my sweetest dream, and my greatest treasure. No matter how many books fill the library, none could ever compare to the story we are writing together.</p>
+        <p>Forever and always,</p>
+        <p>Your adoring boyfriend,</p>
+    </div>
+    
+    <script>
+        document.getElementById("unlockButton").addEventListener("click", function() {
+            let passcode = document.getElementById("passcode").value;
+            if (passcode === "adithyeezy") {
+                document.getElementById("letter").style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
